@@ -1,0 +1,8 @@
+>s1
+ABBCAC
+>s2
+A-BBAC
+>s3
+AB-BAC
+>s4
+CBBCAC
