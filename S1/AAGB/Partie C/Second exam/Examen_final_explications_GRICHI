@@ -1,0 +1,43 @@
+GRICHI
+Ihsân
+
+Examen final
+
+Critères d'évaluation:
+
+-Construction de l'arbre :
+
+Pour construire l'arbre j'ai tout d'abord codé une fonction "Trouver_seed" qui m'a permis de tout d'abord déterminer toutes les graines du séquences (avec des répétitions).
+Ensuite, j'ai dû coder la fonction "Ajouter_graine". Cette fonction prend en argument un pointeur vers un tyArbre, une chaine de caractère (la séquence), la taille des graines, le tableau d'avant ainsi qu'un pointeur qui me permet de parcourir le tableau.
+Cette fonction est récursive (d'où le pointeur compteur pour parcourir le tableau) et j'ajoute la graine au bon endroit en fonction de l'ordre alphabétique.
+
+-Ecriture de l'abre dans un fichier :
+
+Pour cela j'ai tout d'abord dû coder une fonction qui compte le nombre d'occurences d'une graine dans une séquence.
+Ensuite, j'ai codé la fonction "Create_file" qui prend en argument un pointeur vers un tyArbre, un pointeur vers un FILE et le tableau des graines.
+Cette fonction est également récursive et écris dans le fichier chaque graine et son nombre d'occurences en parcourant l'arbre de façon préfixe.
+
+-Reutilisation des fonctions de lecture :
+
+J'ai simplement réutilisé les fonctions LireFastaMul et LireFastaSimple dans le main car les autres ne me semblaient pas réutilisables pour cet exercice.
+
+-Main :
+
+Il m'a servi à la fois de test pour mes données (voir plus tard) mais également à appliquer les consignes de la partie "main" de l'exercice.
+
+-Jeu de test :
+
+J'ai simplement repris la petite séquence présentée dans l'exercice car je savais ce que je devais en faire. Et j'ai également testé si mon tableau stockait bien toutes les graines, et pour des raisons qui me sont obscures il ne stocke que la première graine, la fonction Trouver_seed est un échec.
+
+-Clarté du code :
+
+
+
+-Modularité :
+
+J'ai essayé de coder un maximum de petites fonctions qui nous permettent de mieux traiter et comprendre les données. Bien que ces fonctions ne marchent pas cela m'a au moins permis de simplifier le problème dans mon esprit et de mieux organiser mon code (ne pas écrire de fonction énormes).
+
+-Gestion de la mémoire :
+
+Je n'ai malheureusement pas pu voir si il y avait des segmentation fault vu que mon code ne compile pas mais j'ai pu faire face à ce problème que j'ai reglé lorsque mon code compilait.
+J'ai ensuite codé une fonction afin de libérer la mémoire de l'arbre et les autres variables dynamiques (tableaux, séquences etc...)
