@@ -1,0 +1,15 @@
+Dans le terminal, entrer les commandes suivantes :
+
+createdb projetIG
+
+psql projetIG
+
+CREATE TABLE proteomes(proteine TEXT PRIMARY KEY, espece TEXT, longueur INTEGER, rang_prot INTEGER, fonction TEXT) ;
+
+CREATE TABLE blast(query TEXT, subject TEXT, identite FLOAT, cover_query FLOAT, cover_subject FLOAT, evalue FLOAT, espece_query TEXT, espece subject TEXT) ;
+
+ALTER TABLE blast ADD CONSTRAINT "blast_pkey" PRIMARY KEY (query, subject) ;
+
+ALTER TABLE blast ADD CONSTRAINT "blast_query_fkey" FOREIGN KEY (query) REFERENCES proteomes (proteine) ;
+
+ALTER TABLE blast ADD CONSTRAINT "blast_subject_fkey" FOREIGN KEY (subject) REFERENCES proteomes(proteine) ;
