@@ -5,3 +5,7 @@ On this repository you'll find a few parts of my work during my two years of mas
                We uses a BLASTp to compare the genome based on many criterias such as sequence identity, sequence covery, etc.  
                Then the dotplot shows on a graphic the similarities between the two genomes.   
                For more informations feel free to contact me on my email.
+
+**S1 :** In this file you'll find all the work done during the first semester.  
+
+**S2 :** Same but for the second one.
